@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="password" value="pass1"/>
+    <parameter name="username" value="abhishek"/>
+    <classes>
+      <class name="usingTestngXML.ParameterLogin">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- usingTestngXML.ParameterLogin -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="password" value="admin123"/>
+    <parameter name="username" value="Admin"/>
+    <classes>
+      <class name="usingTestngXML.ParameterLogin">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- usingTestngXML.ParameterLogin -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
